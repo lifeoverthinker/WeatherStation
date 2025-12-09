@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather Station</string>
+    <string name="title_live_data">Dane na żywo</string>
+    <string name="label_temp">Temperatura</string>
+    <string name="label_humidity">Wilgotność</string>
+    <string name="label_pressure">Ciśnienie</string>
+</resources>
