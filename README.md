@@ -77,7 +77,6 @@ System współpracuje z fizycznym urządzeniem zbudowanym w oparciu o:
 **Martyna Niżyńska**
 * Studentka Informatyki
 * Uniwersytet Zielonogórski
-* Kontakt: 112104@stud.uz.zgora.pl
 
 ---
 *Projekt zrealizowany w ramach przedmiotu Systemy Wbudowane, 2025.*
