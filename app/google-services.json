@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "567646577260",
+    "firebase_url": "https://weatherstation-3a7fc-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "weatherstation-3a7fc",
+    "storage_bucket": "weatherstation-3a7fc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567646577260:android:67356f42db0ce9a8b72e49",
+        "android_client_info": {
+          "package_name": "com.example.weather_station"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZIdFZXGCRybMeLH2TnS3B4UIO0_EIKLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

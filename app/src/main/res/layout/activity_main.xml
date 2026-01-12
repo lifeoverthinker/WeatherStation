@@ -41,15 +41,30 @@
                         android:fontFamily="sans-serif-medium"
                         android:text="@string/app_name"
                         android:textColor="?attr/colorOnSurface"
-                        android:textSize="24sp" />
+                        android:textSize="22sp" />
 
-                    <TextView
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardStatusBadge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:alpha="0.7"
-                        android:text="Pomiary na żywo"
-                        android:textColor="?attr/colorOnSurfaceVariant"
-                        android:textSize="14sp" />
+                        android:layout_marginTop="4dp"
+                        app:cardBackgroundColor="#43A047"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="0dp">
+
+                        <TextView
+                            android:id="@+id/tvConnectionStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="2dp"
+                            android:text="● Online"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </com.google.android.material.card.MaterialCardView>
+
                 </LinearLayout>
 
                 <com.google.android.material.materialswitch.MaterialSwitch
@@ -353,10 +368,44 @@
             </LinearLayout>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Wykres Temperatury"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="?attr/colorSurfaceContainerLow"
+                app:cardCornerRadius="16dp"
+                app:contentPadding="16dp"
+                app:strokeWidth="0dp">
+
+                <com.example.weather_station.SimpleGraphView
+                    android:id="@+id/simpleGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGeneratePdf"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Pobierz Raport PDF"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_launcher_foreground"
+                app:iconGravity="textStart" />
+
+            <TextView
                 android:id="@+id/tvLastUpdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="Oczekiwanie na dane..."
                 android:textColor="?attr/colorOnSurfaceVariant"
